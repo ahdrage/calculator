@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#container {
+    background-color: aqua;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr) ;
+    border: solid red 1px;
+    grid-gap: 5px; 
+    height: 450px;
+    width: 350px;
+   
+}
+
+#display {
+    border: solid blue 1px;
+    grid-column: 1 / 5;
+   
+}
+
+#one {
+    border: solid blue 1px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3 
+   
+}
+
+#two {
+    border: solid blue 1px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3
+}
+
+#three {
+    border: solid blue 1px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3
+}
+
+#plus {
+    border: solid blue 1px;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3
+}
+
+#four {
+    border: solid blue 1px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4
+}
+
+#five {
+    border: solid blue 1px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4
+}
+
+#six {
+    border: solid blue 1px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4
+}
+
+#minus {
+    border: solid blue 1px;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4
+}
+
+#seven {
+    border: solid blue 1px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5
+}
+
+#eight {
+    border: solid blue 1px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5
+}
+
+#nine {
+    border: solid blue 1px;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5
+}
+
+#multiply {
+    border: solid blue 1px;
+    grid-column: 4 / 5;
+    grid-row: 4 / 5
+}
+
+#reset {
+    border: solid blue 1px;
+    grid-column: 1 / 2;
+    grid-row: 5 / 5
+}
+
+#zero {
+    border: solid blue 1px;
+    grid-column: 2 / 3;
+    grid-row: 5 / 5
+}
+
+#equals {
+    border: solid blue 1px;
+    grid-column: 3 / 4;
+    grid-row: 5 / 5
+}
+
+#divide {
+    border: solid blue 1px;
+    grid-column: 4 / 5;
+    grid-row: 5 / 5
+}

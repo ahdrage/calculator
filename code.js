@@ -1,5 +1,5 @@
 function add(...nums) {
-    return (nums.reduce((sum, num) => sum + num, 0))
+    return  (nums.reduce((sum, num) => sum + num, 0))
 }
 
 function subtract(a,...nums) {
@@ -15,9 +15,17 @@ function divide(...nums) {
 }
 
 
+function operate(operator, num1, num2) {
+    if (operator === "+") {
+        let sum = add(num1,num2);
+        return sum; 
+    }
+}
 
 console.log(`The sum of 10 + 10 + 10 = ${add(10,10,5)}` );
 console.log(`The subtraction of 10 - 2 - 4 = ${subtract(10,2,4)}` );
 console.log(`The multiplication of 10 * 9 * 8 = ${multiply(10,9,8)}`);
 console.log(`The dividend of 100 / 2 / 2  = ${divide(100,2,2)}`);
 
+let operateTest = operate("+",1,2); 
+console.log(operateTest);
