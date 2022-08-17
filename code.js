@@ -22,10 +22,59 @@ function operate(operator, num1, num2) {
     }
 }
 
-console.log(`The sum of 10 + 10 + 10 = ${add(10,10,5)}` );
-console.log(`The subtraction of 10 - 2 - 4 = ${subtract(10,2,4)}` );
-console.log(`The multiplication of 10 * 9 * 8 = ${multiply(10,9,8)}`);
-console.log(`The dividend of 100 / 2 / 2  = ${divide(100,2,2)}`);
+const oneClicked = document.getElementById("one");
+const twoClicked = document.getElementById("two");
+
+let storedNumber = ""; 
+
 
 let operateTest = operate("+",1,2); 
-console.log(operateTest);
+
+
+
+
+let allDivs = container.children; 
+
+
+
+let arrayForInputs = [];
+let numberEntered ="";
+let stringToShow="";
+let number1 = ""; 
+
+document.body.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "1") {
+        document.getElementById("display").innerText = "1";
+        storedNumber = "1"; 
+        console.log(storedNumber);
+    }
+    
+});
+
+
+
+// Looping through all divs and adding listener to change display when a button is clicked
+for (const div of allDivs) {
+    div.addEventListener("click", function() {
+        // Showing more than one digit at a time in display
+        numberEntered = parseInt(div.textContent);
+        arrayForInputs.push(numberEntered); 
+        stringToShow = arrayForInputs.join(''); 
+        document.getElementById("display").innerText = stringToShow;
+        number1 = parseInt(stringToShow);
+        console.log(typeof(number1));
+       
+       
+    }); 
+  }
+
+
+
+  
+  // While a specific button is not clicked the new value should be added to the array. 
+  
+
+ 
+  
+
+
