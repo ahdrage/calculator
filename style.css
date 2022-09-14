@@ -25,13 +25,38 @@ body {
 
 #display {
     background-color: #EAEAEA;
-    display: flex;
+   
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: flex-end;
     align-items: flex-end;
     grid-column: 1 / 5;
     margin-left: 9px;
     margin-right: 9px;
-    font-size: 38px;
+    font-size: 20px;
+}
+
+#upper {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    font-size: 33px;
+}
+
+    
+#lower {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 2/2; 
+  
+    font-size: 33px;
+    margin-right: 9px;
 }
 
 #one {
